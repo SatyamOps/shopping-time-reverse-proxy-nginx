@@ -8,31 +8,31 @@
 # <apt install npm -y>
 
 # Step 4:
-# First we need to clonning the website in your machine 
+# First we need to clone the website on your machine 
 # git clone <URL's of your website>
-# Here i m using this URL for clonning the project --> "https://github.com/SatyamOps/shopping-time-reverse-proxy-nginx.git"
+# Here I am using this URL for completing the project --> "https://github.com/SatyamOps/shopping-time-reverse-proxy-nginx.git"
 
 # Step5:
-# CLonning your html Page
-# git clone <URL's or your html page maintainance page>
-# here i m using this html page --> "https://github.com/theoricher/Simple-Maintenance-Page.git"
+# CLonning your HTML Page
+# git clone < URLs or your HTML page maintenance page>
+# here i am using this HTML page --> "https://github.com/theoricher/Simple-Maintenance-Page.git"
 
 # step6:
-# copying your all maintaince page contents in (/var/www/html)
+# copying your all maintenance page contents in (/var/www/html)
 # cp -r  <cp -r Simple-Maintenance-Page/* /var/www/html/>
 # Delete your default nginx index.html file using <rm "your_maintainance_file_name">
 
 # step 7:
 # Go inside <cd /etc/nginx/sites-available> file
-# and make one empty file nae will be on your choice (touch reverse) where i will paste my revere proxy script)
+# and make one empty file name will be of your choice (touch reverse) where I will paste my revere proxy script)
 
-# go inside your file "reverse"
+# Go inside your file "reverse"
 # <cd /etc/nginx/sites-available/reverse> and then go inside the file reverse 
 # <nano reverse>
 
 # server {
 #  listen 80;
-#    server_name 34.214.235.240;  ( change ur public ip accordingly)
+#    server_name 34.214.235.240;  ( change ur public IP accordingly)
        
 #   location / {
 #       proxy_pass http://127.0.0.1:3000;  ( application ip:port )
@@ -50,6 +50,9 @@
 # save the file using --> ctrl+x+y+Enter
 
 # step8:
-# npm install (run for install all dependencies)
+# npm install (run to install all dependencies)
 # nohup npm start & (for bootup your deployment server up your website. both only run where is "your package.json" file)
- 
+
+
+
+# note: this all set up is only for educational purposes
